@@ -63,7 +63,8 @@ function addIngredient(){
 
 }
 
-if ( document.querySelector(".add-ingredient") ) {
+
+if (document.querySelector(".add-ingredient")) {
     document
     .querySelector(".add-ingredient")
     .addEventListener('click', addIngredient)
@@ -85,10 +86,4 @@ function addPreparation(){
     newField.children[0].value = ""
     preparation_itens.appendChild(newField)
 
-}
-
-if (document.querySelector(".add-preparation") ) {
-    document
-        .querySelector(".add-preparation")
-        .addEventListener('click', addPreparation)
 }
